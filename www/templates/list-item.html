@@ -1,0 +1,25 @@
+<ion-view view-title="{{title}}">
+  <ion-content>
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Name</span>
+        <input ng-model="item.name" type="text">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Desription</span>
+        <input ng-model="item.description" type="text">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Location</span>
+        <input ng-model="item.location" type="text">
+      </label>
+      <ion-checkbox ng-model="item.forSale">List item for exchange</ion-checkbox>
+      <div class="padding">
+        <button ng-click="list(item)" class="button button-block button-positive activated">
+          {{bottonVal}}
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+

@@ -1,0 +1,16 @@
+<ion-view view-title="Your Items">
+  <ion-content class="padding">
+    <div class="list" ng-repeat="item in items">
+      <a class="item item-avatar" ui-sref="tab.edit-item({itemId: item._id})">
+        <img src="img/No_Image_Available.png">
+        <h2>{{item.name}}</h2>
+        <p>{{item.description}}</p>
+      </a>
+    </div>
+    <div>
+      <button ng-click="listItem()" class="button button-block button-positive activated">
+        List an Item
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

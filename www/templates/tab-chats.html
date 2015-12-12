@@ -1,0 +1,11 @@
+<ion-view view-title="Other Items">
+  <ion-content class="padding">
+    <div class="list" ng-repeat="item in items">
+      <a class="item item-avatar" ui-sref="tab.view-item({itemId: item._id})">
+        <img src="img/No_Image_Available.png">
+        <h2>{{item.name}}</h2>
+        <p>{{item.description}}</p>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,30 @@
+<ion-view view-title="Item Details">
+  <ion-content>
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Name</span>
+        {{item.name}}
+      </label>
+      <label class="item item-input">
+        <i>{{item.description}}</i>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Location</span>
+        {{item.location}}
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Location</span>
+        {{item.owner.firstName}}
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Location</span>
+        {{item.owner.email}}
+      </label>
+      <div class="padding">
+        <button ng-click="list(item)" class="button button-block button-positive activated">
+          Contact Owner
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
